@@ -1,0 +1,10 @@
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet logicalFilePath="upper_length_of_origin_v2"
+               id=" upper_length_of_origin" author="s.m">
+        <modifyDataType tableName="urls" columnName="origin_url" newDataType="varchar(500)"/>
+    </changeSet>
+</databaseChangeLog>
